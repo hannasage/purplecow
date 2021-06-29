@@ -3,3 +3,11 @@
     margin: 0 auto;
     max-width: 1440px;
 }
+
+.center-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 64px 0;
+}

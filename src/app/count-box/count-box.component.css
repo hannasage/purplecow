@@ -49,6 +49,7 @@ span {
 @media only screen and (min-width: 850px) {
     .box {
         height: 300px;
+        min-width: 850px;
         border-radius: 20px;
     }
 
