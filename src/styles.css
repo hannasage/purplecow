@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    --color-primary: #5c3a78;
+    --color-primary-light: #c8bcd1;
+    --color-secondary: white;
+}
+
+body {
+    margin: 0;
+}

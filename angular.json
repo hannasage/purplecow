@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fearless-purplecow"
+    }
+  },
+  "defaultProject": "fearless-purplecow",
+  "cli": {
+    "analytics": "719dbe9e-0294-4d94-9208-8e9334724990"
+  }
 }
