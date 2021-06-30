@@ -19,6 +19,7 @@ export class AddButtonComponent implements OnInit {
   }
 
   hitCounterService(): void {
+    // Hits API and updates the value of countSource with the value from res
     this.counterService.hitCounterAPI().subscribe(res => this.counterService.updateServiceCount(res.value))
   }
 

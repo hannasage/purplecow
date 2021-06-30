@@ -24,8 +24,11 @@ A parent's job is never done; there are a vast number of improvements in both st
 
 - Animation Improvements
     - Animate numbers sliding to the left with a new number appearing from below when `currentCount` is updated
-    - Spice up the UI with a fancier loading animation
+        - Leg work has been done in `count-box.component.css` with `@keyframe`s
+    - Spice up the UI with a fancier loading animations
 - Functionality Improvements
     - Provide a timestamped log of each click
-    - Add a reset button (needs `enable_reset` set to `1` for `countapi` key)
+        - would require database table and API to interact with
+    - Add a reset button 
+        - needs `enable_reset` set to `1` for `countapi` key
     - Using swipe gestures to increment on mobile, replacing the +1 button

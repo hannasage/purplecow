@@ -10,6 +10,7 @@ export class AppbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

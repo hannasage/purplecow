@@ -12,6 +12,8 @@
     animation: page-load 500ms 1000ms ease-in-out backwards;
 }
 
+/* I set this up with the intent of doing sliding 
+animations (see keyframes below) */
 .number-slider {
     min-height: 100%;
     display: flex;
@@ -44,6 +46,7 @@
     opacity: 0;
 }
 
+/* Styling for the box/number-slider in desktop mode */
 @media only screen and (min-width: 850px) {
     .box {
         height: 300px;
@@ -79,7 +82,9 @@
     }
 }
 
-@keyframes slide-in-desktop {
+/* THIS IS ALL ANIMATION STUFF I DID NOT HAVE TIME FOR */
+
+/* @keyframes slide-in-desktop {
     0% {
         transform: translateX(300px);
         opacity: 0;
@@ -115,4 +120,4 @@
     100% {
         
     }
-}
+} */
