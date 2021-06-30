@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { Count } from 'src/app/models/Count';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -32,12 +33,12 @@ export class CounterService {
     return this.currentCount;
   }
 
-  getCounterAPI(): Observable<Object> {
-    return this.http.get<Object>(`${this.apiGet}/${this.namespace}/${this.key}`)
+  getCounterAPI(): Observable<Count> {
+    return this.http.get<Count>(`${this.apiGet}/${this.namespace}/${this.key}`)
   }
 
-  hitCounterAPI(): Observable<Object> {
-    return this.http.get<Object>(`${this.apiHit}/${this.namespace}/${this.key}`)
+  hitCounterAPI(): Observable<Count> {
+    return this.http.get<Count>(`${this.apiHit}/${this.namespace}/${this.key}`)
   }
 
 }

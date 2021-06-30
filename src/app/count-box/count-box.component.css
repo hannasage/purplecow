@@ -7,6 +7,7 @@
     background-color: var(--color-primary);
     background: linear-gradient(145deg, rgba(132,95,160,1) 0%, rgba(92,58,120,1) 100%);
     margin: auto;
+    width: 100vw;
     max-width: 850px;
 }
 
