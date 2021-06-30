@@ -36,3 +36,4 @@ A parent's job is never done; there are a vast number of improvements in both st
 ## Preexisting conditions (known bugs)
 
 - No animtion support for Mozilla FireFox
+- Animations in Edge/Chrome are inconsistently timed: sometimes the spans and button appear simultaneously and other times they are sequentially animated in. Likely an issue with timeouts on animation due to time constraint.

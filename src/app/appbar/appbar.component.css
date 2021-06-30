@@ -9,7 +9,7 @@ h5 {
 
 h3 {
     font-size: 8vw;
-    letter-spacing: 1vw;
+    letter-spacing: .5vw;
     font-weight: 600;
     color: var(--color-primary);
 }
@@ -54,7 +54,7 @@ h5 {
     }
     h3 {
         font-size: 3rem;
-        letter-spacing: .5rem;
+        letter-spacing: .1rem;
     }
     h5 {
         font-size: 1.1rem;
