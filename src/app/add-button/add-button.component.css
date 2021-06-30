@@ -10,6 +10,8 @@ button {
     font-weight: 700;
 
     transition-duration: 250ms;
+
+    animation: page-load 500ms 1750ms ease-in-out backwards;
 }
 
 button:hover {

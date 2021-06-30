@@ -13,3 +13,16 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+@keyframes page-load {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+}

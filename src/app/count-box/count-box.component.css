@@ -9,6 +9,7 @@
     margin: auto;
     width: 100vw;
     max-width: 850px;
+    animation: page-load 500ms 1000ms ease-in-out backwards;
 }
 
 .number-slider {
@@ -17,9 +18,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    animation: page-load 500ms 1250ms ease-in-out backwards;
 }
 
-span {
+.number-slider > span {
     color: var(--color-secondary);
     font-weight: 700;
 }
@@ -42,11 +44,6 @@ span {
     opacity: 0;
 }
 
-@media only screen and (min-width: 540px) {
-    .box {
-    }
-}
-
 @media only screen and (min-width: 850px) {
     .box {
         height: 300px;
@@ -60,11 +57,12 @@ span {
         margin-right: 225px;
         margin-left: -100px;
         max-width: 100%;
+        
     }
 
     .current {
         font-size: 10em;
-        animation: slide-in-desktop 500ms ease-in-out backwards;
+        /* animation: slide-in-desktop 500ms ease-in-out backwards; */
     }
 
     .previous {
@@ -72,12 +70,12 @@ span {
         background: linear-gradient(270deg, rgba(255,255,255,1) -20%, rgba(92,58,120,0) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: slide-out-desktop 500ms ease-in-out backwards;
+        /* animation: slide-out-desktop 500ms ease-in-out backwards; */
     }
 
     .second-previous {
         font-size: .5em;
-        animation: last-slide-desktop 500ms ease-in-out backwards;
+        /* animation: last-slide-desktop 500ms ease-in-out backwards; */
     }
 }
 

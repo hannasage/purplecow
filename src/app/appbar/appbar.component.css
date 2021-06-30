@@ -32,6 +32,8 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    animation: fade-in 500ms 250ms ease-in-out backwards;
 }
 
 .hidden-space {
