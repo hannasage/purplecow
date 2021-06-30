@@ -32,6 +32,8 @@ A parent's job is never done; there are a vast number of improvements in both st
     - Add a reset button 
         - needs `enable_reset` set to `1` for `countapi` key
     - Using swipe gestures to increment on mobile, replacing the +1 button
+- Misc
+    - Unit tests need to be written for all components
 
 ## Preexisting conditions (known bugs)
 
