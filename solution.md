@@ -4,11 +4,11 @@ Before getting started, ensure your local device has Node.js, npm, and Angular 1
 
 ## Waking up the purple cow
 
-To begin the Angular live development server, first open your terminal and navigate to the project's root directory; in this case, that will be `/fearless-purplecow`. From here, you can run `ng` commands.
+To begin the Angular live development server, first open your terminal and navigate to the project's root directory; in this case, that will be `/purplecow`. From here, you can run `ng` and `npm` commands.
 
-If this is your first time opening Project: Purple Cow in your local environment, you may have to run `npm install` to install any dependencies prior to launch.
+Usually if this were your first time opening Project: Purple Cow in your local environment, you would have to run `npm install` to install any dependencies prior to launch. We've taken the liberty of creating `graze`, a script that both installs dependencies and serves the application. Type `npm run graze` to load the development server. Your live development server should open on `http://localhost:3000`
 
-Once you're in this root directory, run `ng serve`. Your live development server should open on `http://localhost:3000`
+(Any subsequent serving can be done through `ng serve`, additional ports configurable by `ng serve --port 7777`)
 
 ## Milking the purple cow
 
@@ -32,3 +32,7 @@ A parent's job is never done; there are a vast number of improvements in both st
     - Add a reset button 
         - needs `enable_reset` set to `1` for `countapi` key
     - Using swipe gestures to increment on mobile, replacing the +1 button
+
+## Preexisting conditions (known bugs)
+
+- No animtion support for Mozilla FireFox
