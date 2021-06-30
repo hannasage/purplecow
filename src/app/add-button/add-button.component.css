@@ -4,6 +4,7 @@ button {
     border-radius: 5px;
     color: var(--color-secondary);
     padding: 8px 16px;
+    margin: 64px;
 
     font-family: inherit;
     font-weight: 700;

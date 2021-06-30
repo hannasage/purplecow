@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CounterService } from 'src/services/counter/counter.service';
+import { CountBoxComponent } from '../count-box/count-box.component';
 
 @Component({
   selector: 'app-add-button',
   templateUrl: './add-button.component.html',
   styleUrls: ['./add-button.component.css']
 })
+
 export class AddButtonComponent implements OnInit {
 
-  constructor() { }
+  @Input() countBox: CountBoxComponent;
+
+  constructor(private counterService: CounterService) { }
 
   ngOnInit(): void {
+
+  }
+
+  hitCounterService(): void {
+    this.counterService.hitCounterAPI().subscribe(res => this.counterService.updateServiceCount(res.value))
   }
 
 }

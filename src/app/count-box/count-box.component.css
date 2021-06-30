@@ -25,6 +25,7 @@ span {
 
 .current {
     font-size: 35vw;
+    
 }
 
 .previous {
@@ -38,7 +39,6 @@ span {
 
 .second-previous {
     opacity: 0;
-    filter: blur(3px);
 }
 
 @media only screen and (min-width: 540px) {
@@ -63,6 +63,7 @@ span {
 
     .current {
         font-size: 10em;
+        animation: slide-in-desktop 500ms ease-in-out backwards;
     }
 
     .previous {
@@ -70,9 +71,49 @@ span {
         background: linear-gradient(270deg, rgba(255,255,255,1) -20%, rgba(92,58,120,0) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: slide-out-desktop 500ms ease-in-out backwards;
     }
 
     .second-previous {
-        font: .5em;
+        font-size: .5em;
+        animation: last-slide-desktop 500ms ease-in-out backwards;
+    }
+}
+
+@keyframes slide-in-desktop {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+        filter: blur(3px);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out-desktop {
+    0% {
+        font-size: 10em;
+        transform: translateX(300px);
+        background-color: white;
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    100% {
+        font-size: 5em;
+    }
+}
+
+@keyframes last-slide-desktop {
+    0% {
+        font-size: 5em;
+        transform: translateX(300px);
+        opacity: 0.5;
+    }    
+
+    100% {
+        
     }
 }

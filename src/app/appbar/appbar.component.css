@@ -34,6 +34,18 @@ h5 {
     align-items: center;
 }
 
+.hidden-space {
+    display: none;
+}
+
+@media only screen and (min-width: 850px) {
+    .hidden-space {
+        display: block;
+        width: 85px;
+        height: 85px;
+    }
+}
+
 @media only screen and (min-width: 540px) {
     img {
         max-width: 85px;
@@ -45,4 +57,5 @@ h5 {
     h5 {
         font-size: 1.1rem;
     }
+    
 }

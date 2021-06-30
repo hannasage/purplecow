@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { AppbarComponent } from './appbar/appbar.component';
 import { CountBoxComponent } from './count-box/count-box.component';
 import { AddButtonComponent } from './add-button/add-button.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AddButtonComponent } from './add-button/add-button.component';
     AddButtonComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
